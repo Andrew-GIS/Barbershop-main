@@ -1,0 +1,123 @@
+.sign-address-section {
+  @media screen and (min-width: 1200px) {
+    background-color: rgba(25, 28, 38, 1);
+  }
+}
+.sign-address-container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+.section--sign {
+  background-color: rgba(25, 28, 38, 1);
+}
+
+.container--sign {
+  @media screen and (min-width: 1200px) {
+    width: 600px;
+    padding-right: 40px;
+  }
+}
+
+.sign__title {
+  margin-bottom: 40px;
+
+  color: $white-color;
+}
+
+.footer-form-sign {
+  margin-top: 44px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.form-sign__form-field {
+  position: relative;
+  margin-bottom: 44px;
+
+  & + & {
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 330px;
+  }
+}
+
+.form-sign__label {
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transition: transform $transition-duration $timing-function,
+    color $transition-duration $timing-function;
+  color: rgba(157, 164, 189, 0.4);
+
+  .form-sign__input:focus + & {
+    transform: translateY(-120%);
+    color: $white-color;
+  }
+
+  .form-sign__input:not(:placeholder-shown) + & {
+    transform: translateY(-120%);
+  }
+}
+
+.form-sign__input {
+  height: 30px;
+  display: block;
+  border-radius: 0;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  padding: 5px 3px;
+  transition: border-color $transition-duration $timing-function;
+  width: 100%;
+  color: $white-color;
+  background-color: transparent;
+  text-decoration: none;
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+
+  &--tel {
+    @media screen and (min-width: 1200px) {
+      width: 260px;
+    }
+  }
+
+  &::placeholder {
+    color: rgba(157, 164, 189, 0.4);
+  }
+
+  &:focus {
+    border-color: $white-color;
+  }
+}
+
+.form-sign__textarea {
+  resize: none;
+  width: 100%;
+  height: 76px;
+  margin-bottom: 44px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  border-radius: 0;
+  transition: border-color $transition-duration $timing-function;
+
+  color: $white-color;
+  background-color: transparent;
+
+  &::placeholder {
+    color: rgba(157, 164, 189, 0.4);
+  }
+
+  &:focus {
+    border-color: $white-color;
+  }
+}

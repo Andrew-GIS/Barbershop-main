@@ -1,0 +1,16 @@
+.gallery__title {
+  margin-bottom: 44px;
+}
+
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -15px;
+}
+.gallery__item {
+  margin: 15px;
+  @media screen and (max-width: 767px) {
+    display: flex;
+  }
+}
